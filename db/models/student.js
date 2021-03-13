@@ -19,6 +19,8 @@ const Student = db.define('student', {
   },
 });
 
+// hooks 
+// need to review
 Student.beforeCreate((student) => {
   const nameFirst = student.firstName;
   const nameLast = student.lastName;
